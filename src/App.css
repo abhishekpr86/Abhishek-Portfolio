@@ -1,0 +1,153 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+  background: color-mix(in oklab, transparent 60%, #000 40%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.75rem; 
+}
+
+.socials { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+}
+
+.social-icon { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 32px; 
+  height: 32px; 
+  border-radius: 999px; 
+  color: #fff; 
+  background: #1a1a1a; 
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.social-icon:hover { 
+  border-color: #646cff; 
+}
+.social-icon.linkedin { color: #0a66c2; }
+.social-icon.instagram { color: #e1306c; }
+
+.nav-center { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 1rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.nav-center a { 
+  color: inherit; 
+  font-weight: 600; 
+}
+.nav-center a:hover { 
+  color: #747bff; 
+}
+
+.nav-right { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+}
+.logo-img { 
+  width: 36px; 
+  height: 36px; 
+  object-fit: contain; 
+}
+.logo-fallback { 
+  font-weight: 700; 
+  letter-spacing: 0.5px; 
+}
+
+.connect-btn { 
+  padding: 0.5rem 0.9rem; 
+  border-radius: 999px; 
+  background-color: #1a1a1a; 
+  border: 1px solid rgba(255,255,255,0.12); 
+  color: inherit; 
+}
+.connect-btn:hover { 
+  border-color: #646cff; 
+}
+
+/* Layout helpers for sections so navbar doesn't overlap */
+.page { 
+  padding-top: 72px; 
+}
+.section { 
+  min-height: 80vh; 
+  padding: 2rem 1rem; 
+  display: grid; 
+  place-items: center; 
+}
+.section h2 { 
+  margin: 0; 
+}
+
+/* Global overrides kept here (instead of index.css) */
+html { scroll-behavior: smooth; }
+body { display: block; }
