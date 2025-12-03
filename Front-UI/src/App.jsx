@@ -4,7 +4,7 @@ import Navbar from './Component/Navbar.jsx'
 function App() {
   return (
     <div className="page">
-      <Navbar />
+      <Navbar/>
       </div>
 
       

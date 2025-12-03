@@ -50,7 +50,7 @@
   z-index: 1000;
   -webkit-backdrop-filter: saturate(180%) blur(8px);
   backdrop-filter: saturate(180%) blur(8px);
-  background: color-mix(in oklab, transparent 60%, #000 40%);
+  background: color-mix(in oklab, transparent 60%, #2961d2 40%);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -84,7 +84,7 @@
   border-radius: 999px; 
   color: #fff; 
   background: #1a1a1a; 
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(63, 21, 155, 0.12);
 }
 .social-icon:hover { 
   border-color: #646cff; 
@@ -97,8 +97,7 @@
   justify-content: center; 
   align-items: center; 
   gap: 1rem; 
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: 1rem; 
 }
 .nav-center a { 
   color: inherit; 
@@ -112,16 +111,14 @@
   display: flex; 
   align-items: center; 
   gap: 0.5rem; 
+  margin-left: auto; 
 }
 .logo-img { 
-  width: 36px; 
-  height: 36px; 
+  width: 100px; 
+  height: 100px; 
   object-fit: contain; 
 }
-.logo-fallback { 
-  font-weight: 700; 
-  letter-spacing: 0.5px; 
-}
+
 
 .connect-btn { 
   padding: 0.5rem 0.9rem; 
